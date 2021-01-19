@@ -51,7 +51,8 @@ python3 train_seg_reg.py --exp=exp/seg_reg_cv_0 \
   --cv_max=5 \
   --train=True \
   --validate_epoch=100 \
-  --gpu=0
+  --gpu=0 \
+  --dropout_p=0.5
 
 # Code for training MV-V-Net
 python3 train_seg_prior.py --exp=exp/seg_prior_cv_0 \
@@ -63,7 +64,8 @@ python3 train_seg_prior.py --exp=exp/seg_prior_cv_0 \
   --cv_max=5 \
   --train=True \
   --validate_epoch=100 \
-  --gpu=0
+  --gpu=0 \
+  --dropout_p=0.5
 
 # Code for training V-Net
 python3 train_seg.py --exp=exp/seg_cv_0 \
@@ -75,7 +77,8 @@ python3 train_seg.py --exp=exp/seg_cv_0 \
   --cv_max=5 \
   --train=True \
   --validate_epoch=100 \
-  --gpu=0
+  --gpu=0 \
+  --dropout_p=0.5
 ```
 
 ### 3. Make prediction and generate features
